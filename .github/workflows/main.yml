@@ -30,6 +30,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        node-version: [10.x, 12.x, 14.x]
         # The same array lives in test-windows.yml, so make any updates there too.
         test-group:
           [
@@ -125,7 +126,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v1
         with:
-          node-version: [10.x, 12.x, 14.x]
+          node-version: ${{ matrix.node-version }}
           cache: npm
           cache-dependency-path: "front-app/package-lock.json"
       - name: Install dependencies
