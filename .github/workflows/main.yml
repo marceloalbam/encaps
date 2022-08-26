@@ -127,7 +127,7 @@ jobs:
         with:
           node-version: 16.14.x
           cache: npm
-
+          cache-dependency-path: "./blog/package-lock.json"
       - name: Install dependencies
         run: npm ci
 
