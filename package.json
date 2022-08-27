@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/marceloalbam/encaps/issues"
   },
-  "homepage": "https://github.com/marceloalbam/encaps#readme"
+  "homepage": "https://github.com/marceloalbam/encaps#readme",
+  "publishConfig": {
+   "@marceloalbam:registry": "https://npm.pkg.github.com"
+ }
 }
