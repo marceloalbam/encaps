@@ -1,23 +1,16 @@
-name: "Tests"
-
 on: [pull_request]
 
 jobs:
-  # unit tests
-  units:
+  checklist_job:
     runs-on: ubuntu-latest
+    name: Checklist job
     steps:
-      - uses: actions/checkout@v1
-      - run: npm ci
-      - run: npm test
-
-  # test action works running from the graph
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: ./
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Checklist
+        uses: PokaInc/pr-template-action@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           template_dir: '.github/PULL_REQUEST_TEMPLATE/'
-          mapping: 'feature=feature/,feat/;bugfix=fix/,bugfix/'
+          mapping: 'feature=feature/,feat/;bugfix=bugfix/;release=release/'
+         
