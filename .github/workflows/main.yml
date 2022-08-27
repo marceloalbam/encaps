@@ -92,16 +92,16 @@ jobs:
         with:
           repository: github/marceloalbam
           token: ${{ secrets.DOCUBOT_REPO_PAT }}
-          path: marceloalbam
+          path: docs-early-access
           ref: ${{ steps.check-early-access.outputs.result }}
 
       - name: Merge docs-early-access repo's folders
         if: ${{ github.repository == 'github/docs-internal' }}
         run: |
-          mv marceloalbam/assets assets/images/early-access
-          mv marceloalbam/content content/early-access
-          mv marceloalbam/data data/early-access
-          rm -r marceloalbam
+          mv docs-early-access/assets assets/images/early-access
+          mv docs-early-access/content content/early-access
+          mv docs-early-access/data data/early-access
+          rm -r docs-early-access
 
       # This is necessary when LFS files where cloned but does nothing
       # if actions/checkout was run with `lfs:false`.
