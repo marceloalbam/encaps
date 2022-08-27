@@ -8,7 +8,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "@marceloalbam:registry": "https://npm.pkg.github.com"
+    "@marceloalbam/encaps:registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
