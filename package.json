@@ -6,7 +6,10 @@
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
-  "repository": "https://github.com/marceloalbam/encaps.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marceloalbam/encaps.git"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
