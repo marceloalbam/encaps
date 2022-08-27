@@ -1,7 +1,7 @@
 {
   "name": "@marceloalbam/encaps",
   "version": "1.0.0",
-  "description": "",
+  "description": "ttibase - custom template EDSI",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js"
