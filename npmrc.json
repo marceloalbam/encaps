@@ -1,0 +1,23 @@
+{
+  "name": "@marceloalbam/encaps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "@marceloalbam/encaps:registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://marceloalbam@github.com/marceloalbam/encaps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marceloalbam/encaps/issues"
+  },
+  "homepage": "https://github.com/marceloalbam/encaps#readme"
+}
