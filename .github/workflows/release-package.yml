@@ -28,6 +28,6 @@ jobs:
           node-version: 14.x
           registry-url: https://npm.pkg.github.com/
       - run: npm ci
-      - run: NPM_TOKEN=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 npm publish
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
