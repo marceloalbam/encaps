@@ -6,6 +6,9 @@
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
+  "publishConfig": {
+    "@marceloalbam:registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://marceloalbam@github.com/marceloalbam/encaps.git"
