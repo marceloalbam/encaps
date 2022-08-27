@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "ttibase - custom template EDSI",
   "main": "index.js",
-  "scripts": {
-    "build": "webpack --config webpack.config.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/marceloalbam/encaps.git"
